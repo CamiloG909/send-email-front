@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+  <title>Send email</title>
+</head>
+
+<body>
+  <section class="container-index">
+    <header class="header-index">
+      Enviar nuevo mail
+    </header>
+
+    <form id="enviar-mail" class="form-email">
+      <div>
+        <label for="email" >Para:</label>
+        <input class="form-email__input" id="email" type="email" />
+      </div>
+      <div>
+        <label for="issue" >Asunto:</label>
+        <input class="form-email__input" id="issue" type="text" />
+      </div>
+      <div>
+        <label for="message" >Mensaje:</label>
+        <textarea class="form-email__input textarea" id="message"></textarea>
+      </div>
+      </div>
+        <button id="send" class="form-btn send" type="submit">
+          Enviar
+          <i class="bi bi-check-circle form-icon"></i>
+        </button>
+        <button id="clear" class="form-btn clear" type="submit">
+          Limpiar formulario
+          <i class="bi bi-stars form-icon"></i>
+        </button>
+    </form>
+  </section>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
