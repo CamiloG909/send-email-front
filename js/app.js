@@ -42,6 +42,15 @@ function cleanForm(e) {
   email.className = "form-email__input";
   issue.className = "form-email__input";
   message.className = "form-email__input textarea";
+  
+  // Delete messages error in screen
+  const removeMessagesError = document.querySelector(
+    ".form-email__message.error"
+  );
+  
+  if(removeMessagesError){
+    removeMessagesError.remove()
+  }
 }
 
 function validateForm(e) {
